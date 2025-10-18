@@ -56,6 +56,10 @@ En `apprecetas/views.py` tenemos varias vistas:
 
 Todas estas vistas usan la función `render()`. Esta función de Django toma la petición del usuario, una plantilla HTML y un "contexto" (un diccionario de Python con los datos que queremos mostrar), y genera el HTML final que se envía al navegador.
 
+## Panel de Administración: admin.py
+
+Se ha immplementado un  panel de administración en '/admin/'. A éste panle se agregó la funcionalidad de  agregar recetas e imágenes. 
+
 Como elementos futuros para el desarrollo de este proyecto en específico, se considera la creación de formularios a través de forms.py, el mejorar la estética del proyecto más allá de lo estricamente funcional, como es el caso del presente.
 
 Atte.-<br>
