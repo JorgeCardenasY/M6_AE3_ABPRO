@@ -10,3 +10,10 @@ def recetas(request):
 
 def contacto(request):
     return render(request, 'contacto.html')
+
+def detalle_receta(request, receta_id):
+    receta = Receta.objects.get(id=receta_id)
+    return render(request, 'detalle_receta.html', {'receta': receta})
+
+def about(request):
+    return render(request, 'about.html')

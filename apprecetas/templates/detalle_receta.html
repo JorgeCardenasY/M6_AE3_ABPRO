@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ receta.nombre }}</h1>
+    {% if receta.imagen %}
+    <img src="{{ receta.imagen.url }}" class="img-fluid" alt="{{ receta.nombre }}">
+    {% endif %}
+    <h3>Ingredientes</h3>
+    <p>{{ receta.ingredientes }}</p>
+    <h3>Instrucciones</h3>
+    <p>{{ receta.instrucciones }}</p>
+    <a href="{% url 'recetas' %}" class="btn btn-secondary mt-3">Volver a Recetas</a>
+</div>
+{% endblock %}

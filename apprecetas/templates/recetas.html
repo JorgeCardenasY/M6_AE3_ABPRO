@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ receta.nombre }}</h5>
                     <p class="card-text">{{ receta.ingredientes|truncatewords:20 }}</p>
-                    <a href="#" class="btn btn-primary">Ver Receta</a>
+                    <a href="{% url 'detalle_receta' receta.id %}" class="btn btn-primary">Ver Receta</a>
                 </div>
             </div>
         </div>
